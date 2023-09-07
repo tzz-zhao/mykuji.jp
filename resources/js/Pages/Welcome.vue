@@ -2,6 +2,7 @@
 import { Head, Link } from '@inertiajs/vue3';
 import SystemBar from '@/Components/SystemBar.vue';
 import Footer from '@/Components/Footer.vue';
+import AppBar from '@/Components/AppBar.vue';
 
 defineProps({
     canLogin: Boolean,
@@ -15,61 +16,9 @@ defineProps({
     <Head title="Welcome" />
     <v-app id="inspire">
       <SystemBar />
-      <v-app-bar
-        color="grey-lighten-4"
-        flat
-        height="72"
-      >
-        <v-avatar
-          class="ms-2"
-          color="surface-variant"
-          size="32"
-          variant="flat"
-        ></v-avatar>
-        <v-avatar
-          class="mx-2"
-          color="surface-variant"
-          size="32"
-          variant="flat"
-        ></v-avatar>
-  
-        <v-btn
-          class="me-2"
-          color="grey"
-          height="40"
-          variant="flat"
-          width="80"
-        ></v-btn>
-  
-        <v-btn
-          class="me-2"
-          color="grey"
-          height="40"
-          variant="flat"
-          width="100"
-        ></v-btn>
-  
-        <v-btn
-          class="me-2"
-          color="grey"
-          height="40"
-          variant="flat"
-          width="120"
-        ></v-btn>
-  
-        <v-btn
-          class="me-2"
-          color="grey"
-          height="40"
-          variant="flat"
-          width="120"
-        ></v-btn>
-  
-        <v-spacer></v-spacer>
-      </v-app-bar>
-  
+      <AppBar />
       <Footer />
-  
+
       <v-navigation-drawer floating>
         <div class="d-flex px-2 my-2">
           <v-btn
@@ -201,6 +150,7 @@ defineProps({
         </div>
       </v-navigation-drawer>
   
+      
       <v-main>
         <v-sheet
           class="mx-auto pa-2 pt-6"
@@ -272,5 +222,6 @@ defineProps({
           </v-container>
         </v-sheet>
       </v-main>
+      
     </v-app>
   </template>
