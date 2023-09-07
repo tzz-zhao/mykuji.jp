@@ -1,5 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import SystemBar from '@/Components/SystemBar.vue';
 import Footer from '@/Components/Footer.vue';
 
 defineProps({
@@ -13,16 +14,7 @@ defineProps({
 <template>
     <Head title="Welcome" />
     <v-app id="inspire">
-      <v-system-bar color="red">
-        <v-spacer></v-spacer>
-  
-        <v-icon>mdi-square</v-icon>
-  
-        <v-icon>mdi-circle</v-icon>
-  
-        <v-icon>mdi-triangle</v-icon>
-      </v-system-bar>
-  
+      <SystemBar />
       <v-app-bar
         color="grey-lighten-4"
         flat
