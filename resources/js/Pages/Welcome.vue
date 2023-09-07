@@ -1,5 +1,6 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
+import Footer from '@/Components/Footer.vue';
 
 defineProps({
     canLogin: Boolean,
@@ -75,13 +76,7 @@ defineProps({
         <v-spacer></v-spacer>
       </v-app-bar>
   
-      <v-footer
-        app
-        color="red"
-        height="44"
-      >
-        <v-row justify="center">&copy;2023 MyKuji.JP</v-row>
-      </v-footer>
+      <Footer />
   
       <v-navigation-drawer floating>
         <div class="d-flex px-2 my-2">
